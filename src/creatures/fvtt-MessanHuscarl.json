@@ -1,0 +1,3613 @@
+{
+  "folder": "bf3Jltn80Mf7LPIa",
+  "name": "Huscarl (Gold 2)",
+  "type": "creature",
+  "img": "modules/memoirs-of-grund/art/tokens/HumanoidMessarHuscarl.png",
+  "system": {
+    "characteristics": {
+      "ws": {
+        "type": "number",
+        "label": "CHAR.WS",
+        "abrev": "CHARAbbrev.WS",
+        "initial": 60,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "bs": {
+        "type": "Number",
+        "label": "CHAR.BS",
+        "abrev": "CHARAbbrev.BS",
+        "initial": 30,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "s": {
+        "type": "Number",
+        "label": "CHAR.S",
+        "abrev": "CHARAbbrev.S",
+        "initial": 45,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "t": {
+        "type": "Number",
+        "label": "CHAR.T",
+        "abrev": "CHARAbbrev.T",
+        "initial": 45,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "i": {
+        "type": "Number",
+        "label": "CHAR.I",
+        "abrev": "CHARAbbrev.I",
+        "initial": 45,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "ag": {
+        "type": "Number",
+        "label": "CHAR.Ag",
+        "abrev": "CHARAbbrev.Ag",
+        "initial": 45,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "dex": {
+        "type": "Number",
+        "label": "CHAR.Dex",
+        "abrev": "CHARAbbrev.Dex",
+        "initial": 30,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "int": {
+        "type": "Number",
+        "label": "CHAR.Int",
+        "abrev": "CHARAbbrev.Int",
+        "initial": 30,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "wp": {
+        "type": "Number",
+        "label": "CHAR.WP",
+        "abrev": "CHARAbbrev.WP",
+        "initial": 70,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      },
+      "fel": {
+        "type": "Number",
+        "label": "CHAR.Fel",
+        "abrev": "CHARAbbrev.Fel",
+        "initial": 30,
+        "modifier": 0,
+        "advances": 0,
+        "bonusMod": 0,
+        "calculationBonusModifier": 0
+      }
+    },
+    "status": {
+      "wounds": {
+        "type": "Number",
+        "label": "Wounds",
+        "abrev": "W",
+        "value": 8,
+        "max": 8
+      },
+      "advantage": {
+        "type": "Number",
+        "label": "Advantage",
+        "value": 0,
+        "max": 10
+      },
+      "criticalWounds": {
+        "type": "Number",
+        "label": "Critical Wounds",
+        "value": 0,
+        "max": 2
+      },
+      "sin": {
+        "type": "Number",
+        "label": "Sin",
+        "value": "0"
+      },
+      "penalties": {
+        "type": "String",
+        "label": "Penalties",
+        "value": ""
+      },
+      "corruption": {
+        "type": "Number",
+        "label": "Corruption",
+        "value": 0
+      },
+      "encumbrance": {
+        "type": "Number",
+        "label": "Encumbrance",
+        "max": 0,
+        "current": 0
+      },
+      "mount": {
+        "id": "",
+        "mounted": false,
+        "isToken": false,
+        "tokenData": {
+          "scene": "",
+          "token": ""
+        }
+      }
+    },
+    "details": {
+      "species": {
+        "type": "String",
+        "label": "Species",
+        "value": "",
+        "subspecies": ""
+      },
+      "gender": {
+        "type": "String",
+        "label": "Gender",
+        "value": ""
+      },
+      "biography": {
+        "type": "String",
+        "label": "Biography",
+        "value": ""
+      },
+      "gmnotes": {
+        "type": "String",
+        "label": "GM Notes",
+        "value": ""
+      },
+      "size": {
+        "type": "String",
+        "label": "Size",
+        "value": "avg"
+      },
+      "move": {
+        "type": "Number",
+        "label": "Movement",
+        "value": 4,
+        "walk": 0,
+        "run": 0
+      },
+      "god": {
+        "type": "String",
+        "label": "God",
+        "value": ""
+      },
+      "status": {
+        "type": "String",
+        "value": "",
+        "standing": "",
+        "tier": 0,
+        "modifier": 0
+      },
+      "hitLocationTable": {
+        "value": "hitloc",
+        "type": "String",
+        "label": "Hit Location Table"
+      }
+    },
+    "excludedTraits": []
+  },
+  "prototypeToken": {
+    "name": "Huscarl",
+    "displayName": 20,
+    "actorLink": false,
+    "appendNumber": false,
+    "prependAdjective": false,
+    "texture": {
+      "src": "modules/memoirs-of-grund/art/tokens/HumanoidMessarHuscarl.png",
+      "scaleX": 2,
+      "scaleY": 2,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "tint": null
+    },
+    "width": 1,
+    "height": 1,
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 0,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "status.wounds"
+    },
+    "bar2": {
+      "attribute": "status.advantage"
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "color": null
+    },
+    "sight": {
+      "enabled": false,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0,
+      "color": null
+    },
+    "detectionModes": [],
+    "flags": {},
+    "randomImg": false
+  },
+  "items": [
+    {
+      "_id": "0CwV96kTDRF0jUhk",
+      "name": "Entertain",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-fel.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "isSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "fel"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560810,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "1jCxbFAUuFuAPLJl",
+      "name": "Dodge",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-ag.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.dPpyiMhPwVGJnJrv]{Dodge}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ag"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560825,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "4IGdIhnwTaZijzg7",
+      "name": "Charm Animal",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-wp.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.1N6sOXgrqF1KkIh0]{Charm Animal}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "wp"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560850,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "4mJoPBw4drm1kv2D",
+      "name": "Melee",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-ws.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "isSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ws"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560856,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "7pQo66cESWttzIlb",
+      "name": "Gamble",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-int.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.JVBD7pcdOPJ4nCjq]{Gamble}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "int"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560881,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "AaXk4bfDRTPeeYjn",
+      "name": "Art",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-dex.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "isSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "dex"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560905,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "CcNJsS4jSwB6Ug1J",
+      "name": "Endurance",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-t.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.E9UyI8AMrBqgCX4a]{Endurance}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "t"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560924,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "Fs06sr7y9JKpVQmB",
+      "name": "Perception",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-i.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.6Jhks0zDRpJeN6dW]{Perception}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "i"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560948,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "I0yPc4PH5erWJLmu",
+      "name": "Intimidate",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-s.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mDs8HUZopZAb1fH0]{Intimidate}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "s"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560959,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "KL4pCOqma5E7fLG4",
+      "name": "Row",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-s.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ACCaGYXdz9yKyxgG]{Row}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "s"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560967,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "LGHozP5gmQ8cuDQV",
+      "name": "Athletics",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-ag.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.Ss6Gp732GjscYke0]{Athletics}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ag"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560970,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "McTtmZu3Ac8Lh48W",
+      "name": "Stealth",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-ag.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "isSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ag"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560976,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "MeXCAQ3wqJzX07X7",
+      "name": "Ride",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-ag.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "isSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ag"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560977,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "R2ytluHiEFF2KQ5e",
+      "name": "Consume Alcohol",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-t.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Consume Alcohol}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "t"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560993,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "RLQHm1s4IuY9RSr2",
+      "name": "Gossip",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-fel.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.ns3PDbblIFcwqyQi]{Gossip}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "fel"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273560994,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "cYtU0ORRFCOpQLWz",
+      "name": "Intuition",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-i.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.31VEXGfn6houFutI]{Intuition}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "i"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561040,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "d3VZwO4Y5JH5DXdT",
+      "name": "Bribery",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-fel.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.IwGXgEPOkNVZ0SwI]{Bribery}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "fel"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561041,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "exLrBrn2mjb6x2Cq",
+      "name": "Charm",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-fel.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.9OommpqxE34iocmg]{Charm}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "fel"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561048,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "iYan4z52v7HYM9u9",
+      "name": "Drive",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-ag.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.uLPWAFSfT5Vf1zZl]{Drive}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ag"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561062,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "oMaJZ5cvCJeOUq9H",
+      "name": "Leadership",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-fel.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.haKq6qZXYj7Bweu4]{Leadership}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "fel"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561085,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "os4NKy5Oy6sRt1eh",
+      "name": "Outdoor Survival",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-int.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {},
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3]{Outdoor Survival}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "int"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561088,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "pKLMbmG3Ivt6mzMf",
+      "name": "Haggle",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-fel.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.qSSRHdEK5P7VRmKW]{Haggle}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "fel"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561089,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "pxNjTxsp1Kp0SmQe",
+      "name": "Cool",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-wp.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.m14pGtefJzDYhgzW]{Cool}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "wp"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561091,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "sRuMlaPU5xdIrwhd",
+      "name": "Climb",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-s.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "description"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.yOONKSIBrg4FOl20]{Climb}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "s"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561099,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "_id": "zZUX7wO4rOo8k9F0",
+      "name": "Navigation",
+      "type": "skill",
+      "img": "modules/wfrp4e-core/icons/skills/basic-skill-i.png",
+      "effects": [],
+      "folder": "dc53RquVINsYS6cm",
+      "sort": 0,
+      "flags": {
+        "_sheetTab": "details"
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.rf7gtZko4KJvjFaE]{Navigation}"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "bsc",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "i"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "ownership": {
+        "default": 0,
+        "sAiwDCZFd21tgaDN": 3
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1691216016344,
+        "modifiedTime": 1693273561125,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      }
+    },
+    {
+      "name": "Gold Crown",
+      "type": "money",
+      "img": "modules/wfrp4e-core/icons/currency/goldcrown.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "description",
+        "core": {}
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 0
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 0.005
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "coinValue": {
+          "label": "Value (in d)",
+          "type": "Number",
+          "value": 240
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1663627495181,
+        "modifiedTime": 1693273560952,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      },
+      "folder": "fFWGmypKsp4nFc6H",
+      "_id": "Ggx0bRaCuq8MbF0g",
+      "sort": 200000,
+      "ownership": {
+        "default": 0,
+        "T4WVZR2JbJC1IdhZ": 3
+      }
+    },
+    {
+      "name": "Silver Shilling",
+      "type": "money",
+      "img": "modules/wfrp4e-core/icons/currency/silvershilling.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "description",
+        "core": {}
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 0
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 0.005
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "coinValue": {
+          "label": "Value (in d)",
+          "type": "Number",
+          "value": 12
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1663627495184,
+        "modifiedTime": 1693273560967,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      },
+      "folder": "fFWGmypKsp4nFc6H",
+      "_id": "KB8HgDz56dh2w7w1",
+      "sort": 300000,
+      "ownership": {
+        "default": 0,
+        "T4WVZR2JbJC1IdhZ": 3
+      }
+    },
+    {
+      "name": "Brass Penny",
+      "type": "money",
+      "img": "modules/wfrp4e-core/icons/currency/brasspenny.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "description",
+        "core": {}
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 0
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 0.005
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "coinValue": {
+          "label": "Value (in d)",
+          "type": "Number",
+          "value": 1
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.0",
+        "coreVersion": "11.307",
+        "createdTime": 1663627495169,
+        "modifiedTime": 1693273560813,
+        "lastModifiedBy": "sAiwDCZFd21tgaDN"
+      },
+      "folder": "fFWGmypKsp4nFc6H",
+      "_id": "0MYOJFx3vkYA95B4",
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "T4WVZR2JbJC1IdhZ": 3
+      }
+    },
+    {
+      "type": "skill",
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "adv",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ws"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 20,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        }
+      },
+      "img": "systems/wfrp4e/icons/blank.png",
+      "name": "Melee (Basic)",
+      "_id": "Dd2frsX0CvL38pus",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "khhY7fuxf56JOp5M": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1707824728607,
+        "modifiedTime": 1707838322157,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      }
+    },
+    {
+      "type": "skill",
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "advanced": {
+          "value": "adv",
+          "type": "String"
+        },
+        "grouped": {
+          "value": "noSpec",
+          "type": "String"
+        },
+        "characteristic": {
+          "type": "String",
+          "label": "Characteristic",
+          "value": "ws"
+        },
+        "advances": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 20,
+          "costModifier": 0,
+          "force": false
+        },
+        "modifier": {
+          "type": "Number",
+          "label": "Advances",
+          "value": 0
+        },
+        "total": {
+          "type": "Number",
+          "label": "Total"
+        }
+      },
+      "img": "systems/wfrp4e/icons/blank.png",
+      "name": "Melee (Polearm)",
+      "_id": "ZGD2eSnNs0HCUmHR",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "khhY7fuxf56JOp5M": 3
+      },
+      "flags": {},
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1707824737268,
+        "modifiedTime": 1707838319519,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      }
+    },
+    {
+      "name": "Hand Weapon",
+      "type": "weapon",
+      "img": "modules/wfrp4e-core/icons/equipment/weapons/hand-weapon.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.1zaqojk0Oq1m8vYv"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 1
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "1",
+          "ss": "0",
+          "bp": "0",
+          "value": ""
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "common"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "damage": {
+          "type": "String",
+          "label": "Damage",
+          "dice": "",
+          "value": "SB+4",
+          "meleeValue": "SB+4",
+          "rangedValue": ""
+        },
+        "reach": {
+          "type": "String",
+          "label": "Reach",
+          "value": "average"
+        },
+        "range": {
+          "type": "String",
+          "label": "Range",
+          "value": ""
+        },
+        "skill": {
+          "type": "String",
+          "label": "Skill Override",
+          "value": ""
+        },
+        "modeOverride": {
+          "type": "String",
+          "label": "Mode Override",
+          "value": ""
+        },
+        "twohanded": {
+          "type": "Boolean",
+          "label": "Two-Handed",
+          "value": false
+        },
+        "ammunitionGroup": {
+          "type": "String",
+          "label": "Ammunition Group",
+          "value": "none"
+        },
+        "currentAmmo": {
+          "type": "Number",
+          "value": 0
+        },
+        "consumesAmmo": {
+          "value": true
+        },
+        "weaponGroup": {
+          "type": "String",
+          "label": "Weapon Group",
+          "value": "basic"
+        },
+        "qualities": {
+          "label": "Qualities",
+          "value": [],
+          "type": "String"
+        },
+        "flaws": {
+          "label": "Flaws",
+          "value": [],
+          "type": "String"
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "equipped": false,
+        "loaded": {
+          "value": false,
+          "repeater": false,
+          "amt": 0
+        },
+        "offhand": {
+          "value": false
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495171,
+        "modifiedTime": 1707824800418,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "0Uy9eJvjxSs40fK9",
+      "folder": null,
+      "sort": 25000,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Shield",
+      "type": "weapon",
+      "img": "modules/wfrp4e-core/icons/equipment/weapons/shield.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.8nJ9R8tbhW42VGhr"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 1
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "2",
+          "ss": "0",
+          "bp": "0"
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "common"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "damage": {
+          "type": "String",
+          "label": "Damage",
+          "dice": "",
+          "value": "SB+2",
+          "meleeValue": "SB+2",
+          "rangedValue": ""
+        },
+        "reach": {
+          "type": "String",
+          "label": "Reach",
+          "value": "vshort"
+        },
+        "range": {
+          "type": "String",
+          "label": "Range",
+          "value": ""
+        },
+        "skill": {
+          "type": "String",
+          "label": "Skill Override",
+          "value": ""
+        },
+        "modeOverride": {
+          "type": "String",
+          "label": "Mode Override",
+          "value": ""
+        },
+        "twohanded": {
+          "type": "Boolean",
+          "label": "Two-Handed",
+          "value": false
+        },
+        "ammunitionGroup": {
+          "type": "String",
+          "label": "Ammunition Group",
+          "value": "none"
+        },
+        "currentAmmo": {
+          "type": "Number",
+          "value": 0
+        },
+        "consumesAmmo": {
+          "value": true
+        },
+        "weaponGroup": {
+          "type": "String",
+          "label": "Weapon Group",
+          "value": "basic"
+        },
+        "qualities": {
+          "label": "Qualities",
+          "value": [
+            {
+              "value": 2,
+              "name": "shield"
+            },
+            {
+              "name": "defensive"
+            }
+          ],
+          "type": "String"
+        },
+        "flaws": {
+          "label": "Flaws",
+          "value": [
+            {
+              "name": "undamaging"
+            }
+          ],
+          "type": "String"
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "equipped": false,
+        "loaded": {
+          "value": false,
+          "repeater": false,
+          "amt": 0
+        },
+        "offhand": {
+          "value": false
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495176,
+        "modifiedTime": 1707824801003,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "rJRe4Uecwp8qqHI2",
+      "folder": null,
+      "sort": 125000,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Mail Coat",
+      "type": "armour",
+      "img": "modules/wfrp4e-core/icons/equipment/armour/mail-coat.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.i76oPVM2eFEs5IBh"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 3
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "3",
+          "ss": "0",
+          "bp": "0"
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "common"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "worn": {
+          "type": "Boolean",
+          "label": "Worn",
+          "value": true
+        },
+        "armorType": {
+          "type": "String",
+          "label": "Armour Type",
+          "value": "mail"
+        },
+        "penalty": {
+          "type": "String",
+          "label": "Penalty",
+          "value": ""
+        },
+        "qualities": {
+          "type": "String",
+          "label": "Qualities",
+          "value": [
+            {
+              "name": "flexible"
+            }
+          ]
+        },
+        "flaws": {
+          "type": "String",
+          "label": "Flaws",
+          "value": []
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "AP": {
+          "head": 0,
+          "lArm": 2,
+          "rArm": 2,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 2
+        },
+        "APdamage": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "maxAP": {
+          "head": 0,
+          "lArm": 2,
+          "rArm": 2,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 2
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495295,
+        "modifiedTime": 1707824758105,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "qYfjhBy7DADYcm8p",
+      "folder": "urDb04aC38SChVU2",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Leather Leggings",
+      "type": "armour",
+      "img": "modules/wfrp4e-core/icons/equipment/armour/leather-leggings.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.MzppW5E5c3by9iBU"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 1
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "0",
+          "ss": "14",
+          "bp": "0"
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "common"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "worn": {
+          "type": "Boolean",
+          "label": "Worn",
+          "value": true
+        },
+        "armorType": {
+          "type": "String",
+          "label": "Armour Type",
+          "value": "softLeather"
+        },
+        "penalty": {
+          "type": "String",
+          "label": "Penalty",
+          "value": ""
+        },
+        "qualities": {
+          "type": "String",
+          "label": "Qualities",
+          "value": []
+        },
+        "flaws": {
+          "type": "String",
+          "label": "Flaws",
+          "value": []
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "AP": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 1,
+          "rLeg": 1,
+          "body": 0
+        },
+        "APdamage": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "maxAP": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 1,
+          "rLeg": 1,
+          "body": 0
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495277,
+        "modifiedTime": 1707824759044,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "wq1QEAcHR3aAUaZ6",
+      "folder": "urDb04aC38SChVU2",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Mail Coif",
+      "type": "armour",
+      "img": "modules/wfrp4e-core/icons/equipment/armour/mail-coif.png",
+      "effects": [
+        {
+          "_id": "6pQrluba3OWBJgYI",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "equipped",
+              "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\"))\n   args.prefillModifiers.modifier -= 10",
+              "preventDuplicateEffects": false,
+              "hide": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/equipment/armour/mail-coif.png",
+          "tint": null,
+          "transfer": true,
+          "origin": null,
+          "name": "Mail Coif",
+          "description": "",
+          "statuses": []
+        }
+      ],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.4xV16ttsxCa311vl"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 2
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "1",
+          "ss": "0",
+          "bp": "0"
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "scarce"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "worn": {
+          "type": "Boolean",
+          "label": "Worn",
+          "value": true
+        },
+        "armorType": {
+          "type": "String",
+          "label": "Armour Type",
+          "value": "mail"
+        },
+        "penalty": {
+          "type": "String",
+          "label": "Penalty",
+          "value": "-10 Perception"
+        },
+        "qualities": {
+          "type": "String",
+          "label": "Qualities",
+          "value": [
+            {
+              "name": "flexible"
+            }
+          ]
+        },
+        "flaws": {
+          "type": "String",
+          "label": "Flaws",
+          "value": [
+            {
+              "name": "partial"
+            }
+          ]
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "AP": {
+          "head": 2,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "APdamage": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "maxAP": {
+          "head": 2,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495173,
+        "modifiedTime": 1707824759930,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "8C0es0rCgbLIhdXO",
+      "folder": "urDb04aC38SChVU2",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Plate Open Helm",
+      "type": "armour",
+      "img": "modules/wfrp4e-core/icons/equipment/armour/plate-open-helm.png",
+      "effects": [
+        {
+          "_id": "YLns5DNubGbr27Lh",
+          "flags": {
+            "wfrp4e": {
+              "effectTrigger": "prefillDialog",
+              "effectApplication": "equipped",
+              "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\"))\n   args.prefillModifiers.modifier -= 10",
+              "preventDuplicateEffects": false
+            }
+          },
+          "changes": [],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "icon": "modules/wfrp4e-core/icons/equipment/armour/plate-open-helm.png",
+          "tint": null,
+          "transfer": true,
+          "origin": null,
+          "name": "Plate Open Helm",
+          "description": "",
+          "statuses": []
+        }
+      ],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.TvUKzvXjc2VChuTT"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 1
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "2",
+          "ss": "0",
+          "bp": "0"
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "common"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "worn": {
+          "type": "Boolean",
+          "label": "Worn",
+          "value": true
+        },
+        "armorType": {
+          "type": "String",
+          "label": "Armour Type",
+          "value": "plate"
+        },
+        "penalty": {
+          "type": "String",
+          "label": "Penalty",
+          "value": "-10 Perception"
+        },
+        "qualities": {
+          "type": "String",
+          "label": "Qualities",
+          "value": []
+        },
+        "flaws": {
+          "type": "String",
+          "label": "Flaws",
+          "value": [
+            {
+              "name": "partial"
+            }
+          ]
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "AP": {
+          "head": 2,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "APdamage": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "maxAP": {
+          "head": 2,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495285,
+        "modifiedTime": 1707824762680,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "ybiXCXbnS32oLCZA",
+      "folder": "urDb04aC38SChVU2",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Halberd",
+      "type": "weapon",
+      "img": "modules/wfrp4e-core/icons/equipment/weapons/halberd.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.CXg7XOFJwu4LZ9LM"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 3
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "2",
+          "ss": "",
+          "bp": ""
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "common"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "damage": {
+          "type": "String",
+          "label": "Damage",
+          "dice": "",
+          "value": "SB+4",
+          "meleeValue": "SB+4",
+          "rangedValue": ""
+        },
+        "reach": {
+          "type": "String",
+          "label": "Reach",
+          "value": "long"
+        },
+        "range": {
+          "type": "String",
+          "label": "Range",
+          "value": ""
+        },
+        "skill": {
+          "type": "String",
+          "label": "Skill Override",
+          "value": ""
+        },
+        "modeOverride": {
+          "type": "String",
+          "label": "Mode Override",
+          "value": ""
+        },
+        "twohanded": {
+          "type": "Boolean",
+          "label": "Two-Handed",
+          "value": true
+        },
+        "ammunitionGroup": {
+          "type": "String",
+          "label": "Ammunition Group",
+          "value": "none"
+        },
+        "currentAmmo": {
+          "type": "Number",
+          "value": 0
+        },
+        "consumesAmmo": {
+          "value": true
+        },
+        "weaponGroup": {
+          "type": "String",
+          "label": "Weapon Group",
+          "value": "polearm"
+        },
+        "qualities": {
+          "label": "Qualities",
+          "value": [
+            {
+              "name": "defensive"
+            },
+            {
+              "name": "hack"
+            },
+            {
+              "name": "impale"
+            }
+          ],
+          "type": "String"
+        },
+        "flaws": {
+          "label": "Flaws",
+          "value": [],
+          "type": "String"
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "equipped": true,
+        "loaded": {
+          "value": false,
+          "repeater": false,
+          "amt": 0
+        },
+        "offhand": {
+          "value": false
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495179,
+        "modifiedTime": 1707824796801,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "r1fUSy0jQSDletRU",
+      "folder": null,
+      "sort": 100782,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    },
+    {
+      "name": "Plate Breastplate",
+      "type": "armour",
+      "img": "modules/wfrp4e-core/icons/equipment/armour/plate-breastplate.png",
+      "effects": [],
+      "flags": {
+        "_sheetTab": "details",
+        "core": {
+          "sourceId": "Compendium.wfrp4e-core.items.oBNXxRFPh1sOT4K2"
+        }
+      },
+      "system": {
+        "description": {
+          "type": "String",
+          "label": "Description",
+          "value": "<p></p>"
+        },
+        "gmdescription": {
+          "type": "String",
+          "label": "Description",
+          "value": ""
+        },
+        "quantity": {
+          "type": "Number",
+          "label": "Quantity",
+          "value": 1
+        },
+        "encumbrance": {
+          "type": "Number",
+          "label": "Encumbrance",
+          "value": 3
+        },
+        "price": {
+          "type": "String",
+          "label": "Price",
+          "gc": "10",
+          "ss": "0",
+          "bp": "0"
+        },
+        "availability": {
+          "type": "String",
+          "label": "Availability",
+          "value": "scarce"
+        },
+        "location": {
+          "type": "Number",
+          "label": "Location",
+          "value": 0
+        },
+        "damageToItem": {
+          "type": "Number",
+          "value": 0,
+          "shield": 0
+        },
+        "worn": {
+          "type": "Boolean",
+          "label": "Worn",
+          "value": true
+        },
+        "armorType": {
+          "type": "String",
+          "label": "Armour Type",
+          "value": "plate"
+        },
+        "penalty": {
+          "type": "String",
+          "label": "Penalty",
+          "value": ""
+        },
+        "qualities": {
+          "type": "String",
+          "label": "Qualities",
+          "value": [
+            {
+              "name": "impenetrable"
+            }
+          ]
+        },
+        "flaws": {
+          "type": "String",
+          "label": "Flaws",
+          "value": [
+            {
+              "name": "weakpoints"
+            }
+          ]
+        },
+        "special": {
+          "type": "String",
+          "label": "Special",
+          "value": ""
+        },
+        "AP": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 2
+        },
+        "APdamage": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 0
+        },
+        "maxAP": {
+          "head": 0,
+          "lArm": 0,
+          "rArm": 0,
+          "lLeg": 0,
+          "rLeg": 0,
+          "body": 2
+        },
+        "source": {
+          "type": "String",
+          "label": "Source"
+        }
+      },
+      "_stats": {
+        "systemId": "wfrp4e",
+        "systemVersion": "7.0.3",
+        "coreVersion": "11.315",
+        "createdTime": 1663627495387,
+        "modifiedTime": 1707824864212,
+        "lastModifiedBy": "khhY7fuxf56JOp5M"
+      },
+      "_id": "MBuGSlPIZcNSiAfo",
+      "folder": "urDb04aC38SChVU2",
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "FIIsUxJ6xGvEDRPV": 3,
+        "sAiwDCZFd21tgaDN": 3,
+        "khhY7fuxf56JOp5M": 3
+      }
+    }
+  ],
+  "effects": [
+    {
+      "_id": "f8oa5Gc55oXXuXfy",
+      "flags": {
+        "wfrp4e": {
+          "effectTrigger": "prefillDialog",
+          "effectApplication": "equipped",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\"))\n   args.prefillModifiers.modifier -= 10",
+          "preventDuplicateEffects": false,
+          "hide": false
+        }
+      },
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": 0,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": 0,
+        "startTurn": 0
+      },
+      "icon": "modules/wfrp4e-core/icons/equipment/armour/mail-coif.png",
+      "tint": null,
+      "transfer": false,
+      "origin": "Compendium.memoirs-of-grund.grund-monsters-whf4e.Actor.i0rMAIN5ShW4I6Js.Item.8C0es0rCgbLIhdXO",
+      "name": "Mail Coif",
+      "description": "",
+      "statuses": []
+    },
+    {
+      "_id": "h3CODy4vnKxjRsTi",
+      "flags": {
+        "wfrp4e": {
+          "effectTrigger": "prefillDialog",
+          "effectApplication": "equipped",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\"))\n   args.prefillModifiers.modifier -= 10",
+          "preventDuplicateEffects": false
+        }
+      },
+      "changes": [],
+      "disabled": false,
+      "duration": {
+        "startTime": 0,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": 0,
+        "startTurn": 0
+      },
+      "icon": "modules/wfrp4e-core/icons/equipment/armour/plate-open-helm.png",
+      "tint": null,
+      "transfer": false,
+      "origin": "Compendium.memoirs-of-grund.grund-monsters-whf4e.Actor.i0rMAIN5ShW4I6Js.Item.ybiXCXbnS32oLCZA",
+      "name": "Plate Open Helm",
+      "description": "",
+      "statuses": []
+    }
+  ],
+  "flags": {
+    "autoCalcRun": true,
+    "autoCalcWalk": true,
+    "autoCalcWounds": true,
+    "autoCalcCritW": true,
+    "autoCalcCorruption": true,
+    "autoCalcEnc": true,
+    "autoCalcSize": true,
+    "core": {},
+    "exportSource": {
+      "world": "compendium-project-whf4e",
+      "system": "wfrp4e",
+      "coreVersion": "11.315",
+      "systemVersion": "7.0.3"
+    }
+  },
+  "_stats": {
+    "systemId": "wfrp4e",
+    "systemVersion": "7.0.3",
+    "coreVersion": "11.315",
+    "createdTime": 1707824707827,
+    "modifiedTime": 1707874881420,
+    "lastModifiedBy": "khhY7fuxf56JOp5M"
+  }
+}
