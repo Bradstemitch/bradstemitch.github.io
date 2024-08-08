@@ -1,28 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import AttributeTable from './WHF4eAttributeTable';
-import SkillList from './WHF4eSkillList';
-import WeaponList from './WHF4eWeaponList';
-import ArmourList from './WHF4eArmourList';
+import WFRP4eAttributeTable from './WFRP4eAttributeTable';
+import WFRP4eSkillList from './WFRP4eSkillList';
+import WFRP4eWeaponList from './WFRP4eWeaponList';
+import WFRP4eArmourList from './WFRP4eArmourList';
 
 function WHF4eCreatureBlock(props: any) {
-    const creature = props.creature
+    const creature = require(`../creatures/WFRP4e/fvtt-${props.creature.fileName}.json`)
     return (
         <div>
             {creature.name}
-            <AttributeTable
+            <WFRP4eAttributeTable
                 move={creature.system.details.move.value}
                 characteristics={creature.system.characteristics}
                 wounds={creature.system.status.wounds.max}
             />
-            <SkillList
+            <br/>
+            <WFRP4eSkillList
                 skills={creature.items.filter((item: any) => item.type === "skill")}
                 characteristics={creature.system.characteristics}
             />
-            <WeaponList
+            <WFRP4eWeaponList
                 weapons={creature.items.filter((item: any) => item.type === "weapon")}
             />
-            <ArmourList
+            <WFRP4eArmourList
                 armour={creature.items.filter((item: any) => item.type === "armour")}
             />
         </div>

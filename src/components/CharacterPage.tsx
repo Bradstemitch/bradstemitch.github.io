@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import { Link, Outlet, Route, Routes } from 'react-router-dom';
-import WHF4eCreatureBlock from './WHF4eCreatureBlock';
+import WHF4eCreatureBlock from './WFRP4eCreatureBlock';
 
 function CharacterPage(props: any) {
     return (

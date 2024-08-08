@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
+import './WFRP4eAttributeTable.css'
 
-function AttributeTable(props: any) {
+function WFRP4eAttributeTable(props: any) {
     return (
-        <table>
+        <table style={{'width':'auto'}}>
             <tbody>
                 <tr>
                     <th>M</th>
@@ -19,7 +20,7 @@ function AttributeTable(props: any) {
                     <th>Fel</th>
                     <th>W</th>
                 </tr>
-                <tr>
+                <tr style={{'textAlign':'center'}}>
                     <td>{props.move}</td>
                     <td>{props.characteristics.ws.initial}</td>
                     <td>{props.characteristics.bs.initial}</td>
@@ -38,4 +39,4 @@ function AttributeTable(props: any) {
     );
 }
 
-export default AttributeTable;
+export default WFRP4eAttributeTable;

@@ -1,13 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 
-function WeaponList(props: any) {
+function WFRP4eArmourList(props: any) {
     return (
         <div>
-            {props.weapons.map((weapon: any) => {
+            {props.armour.map((armourPiece: any) => {
                 return (
                     <>
-                        {weapon.name}
+                        {armourPiece.name}
                         {', '}
                     </>
                 )
@@ -16,4 +16,4 @@ function WeaponList(props: any) {
     );
 }
 
-export default WeaponList;
+export default WFRP4eArmourList;
