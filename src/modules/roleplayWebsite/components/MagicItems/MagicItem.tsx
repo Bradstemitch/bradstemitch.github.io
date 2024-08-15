@@ -1,7 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import { Link, Outlet, Route, Routes } from 'react-router-dom';
-import WHF4eCreatureBlock from '../WFRP4eCreatureBlock';
 import { magicWeapon } from '../../data/MagicItem';
 
 interface MagicItemProps {

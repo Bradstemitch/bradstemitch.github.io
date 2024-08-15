@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 
 function WFRP4eWeaponList(props: any) {
     return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './WFRP4eAttributeTable.css'
 
 function WFRP4eAttributeTable(props: any) {
