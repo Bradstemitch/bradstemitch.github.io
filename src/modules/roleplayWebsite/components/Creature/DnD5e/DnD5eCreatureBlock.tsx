@@ -3,26 +3,39 @@ import DnD5eAttributeTable from './DnD5eAttributeTable';
 import DnD5eArmourList from './DnD5eArmourList';
 import DnD5eSkillList from './DnD5eSkillList';
 import DnD5eWeaponList from './DnD5eWeaponList';
+import DnD5eCreatureArmourClass from './DnD5eCreatureArmourClass';
 
 function DnD5eCreatureBlock(props: any) {
     const creature = require(`../../../data/creatures/DnD5e/fvtt-${props.creature.fileName}.json`)
+    const stats ={
+        str: creature.system.abilities.str.value,
+        strMod: Math.trunc((creature.system.abilities.str.value - 10) / 2),
+        dex:creature.system.abilities.dex.value,
+        dexMod:Math.trunc((creature.system.abilities.dex.value - 10) / 2),    
+        con:creature.system.abilities.con.value,
+        conMod:Math.trunc((creature.system.abilities.con.value - 10) / 2),    
+        int:creature.system.abilities.int.value,
+        intMod:Math.trunc((creature.system.abilities.int.value - 10) / 2),    
+        wis:creature.system.abilities.wis.value,
+        wisMod:Math.trunc((creature.system.abilities.wis.value - 10) / 2),
+        cha:creature.system.abilities.cha.value,
+        chaMod:Math.trunc((creature.system.abilities.cha.value - 10) / 2)
+    }
+
     return (
-        <div>
+        <div style={{"background":"beige", "color":"darkRed", "padding":"5px"}}>
             <strong>
                 {creature.name}
             </strong>
             <div>
-                <em>
+                <em style={{"color":"black"}}>
                     {creature.system.traits.size === 'med' && 'Medium'}
                     {` ${creature.system.details.type.value}, ${creature.system.details.alignment}`}
-                    {creature.system.details.alignment.toLowerCase().includes('any') && ' Alignment'}
+                    {creature.system.details.alignment.toLowerCase().includes('any') && !creature.system.details.alignment.toLowerCase().includes('alignment') && ' Alignment'}
                 </em>
             </div>
             <hr />
-            <div>
-                <strong>Armour Class </strong>
-                {creature.system.attributes.movement.walk}
-            </div>
+            <DnD5eCreatureArmourClass creature={creature} />
             <div>
                 <strong>Hit Points </strong>
                 {`${creature.system.attributes.hp.value} (${creature.system.attributes.hp.formula})`}
@@ -38,7 +51,7 @@ function DnD5eCreatureBlock(props: any) {
             </div>
             <hr />
             <DnD5eAttributeTable
-                characteristics={creature.system.abilities}
+                characteristics={stats}
             />
             <hr />
             <div>
