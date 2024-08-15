@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter, Routes, Route, Outlet, Link } from "react-router-dom";
+import { Routes, Route, Outlet, Link, HashRouter } from "react-router-dom";
 import RoleplayWebsite from './modules/roleplayWebsite/components/Structure/RoleplayRoutes';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename='/'>
       <Routes>
         <Route path={'/'} element={
           <>
@@ -18,7 +18,7 @@ function App() {
           } />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
