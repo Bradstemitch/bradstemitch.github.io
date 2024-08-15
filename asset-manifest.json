@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/memoirs-of-grund-wiki/static/css/main.17028a0b.css",
-    "main.js": "/memoirs-of-grund-wiki/static/js/main.bb54c430.js",
+    "main.js": "/memoirs-of-grund-wiki/static/js/main.354e9da0.js",
     "static/js/592.05d7a57c.chunk.js": "/memoirs-of-grund-wiki/static/js/592.05d7a57c.chunk.js",
     "index.html": "/memoirs-of-grund-wiki/index.html",
     "main.17028a0b.css.map": "/memoirs-of-grund-wiki/static/css/main.17028a0b.css.map",
-    "main.bb54c430.js.map": "/memoirs-of-grund-wiki/static/js/main.bb54c430.js.map",
+    "main.354e9da0.js.map": "/memoirs-of-grund-wiki/static/js/main.354e9da0.js.map",
     "592.05d7a57c.chunk.js.map": "/memoirs-of-grund-wiki/static/js/592.05d7a57c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.17028a0b.css",
-    "static/js/main.bb54c430.js"
+    "static/js/main.354e9da0.js"
   ]
 }
