@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet} from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -21,6 +21,14 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import { Home, Pets } from '@mui/icons-material';
+import HomeListLink from './ListLinks/LinkHome';
+import LinkCreatures from './ListLinks/LinkCreatures';
+import LinkArmoury from './ListLinks/LinkArmoury';
+import LinkMagicItems from './ListLinks/LinkMagicItems';
+import LinkReligions from './ListLinks/LinkReligions';
+import LinkMap from './ListLinks/LinkMap';
+import LinkNations from './ListLinks/LinkNations';
+import LinkCharacters from './ListLinks/LinkCharacters';
 
 interface LayoutProps {
     setRoleplaySystem: Function
@@ -112,7 +120,7 @@ const darkTheme = createTheme({
     },
 });
 
-function Layout(props: LayoutProps) {
+function RoleplayLayout(props: LayoutProps) {
     const theme = useTheme();
     const [value, setValue] = React.useState(0);
     const [open, setOpen] = React.useState(false);
@@ -132,7 +140,6 @@ function Layout(props: LayoutProps) {
     return (
         <ThemeProvider theme={darkTheme}>
             <Box sx={{ display: 'flex' }}>
-                <CssBaseline />
                 <AppBar position="fixed" open={open} color="primary">
                     <Toolbar>
                         <IconButton
@@ -166,53 +173,20 @@ function Layout(props: LayoutProps) {
                     </DrawerHeader>
                     <Divider />
                     <List>
-                        <ListItem key={"Home"} disablePadding sx={{ display: 'block' }}>
-                            <Link to={'/rpg'}>
-                                <ListItemButton
-                                    sx={{
-                                        minHeight: 48,
-                                        justifyContent: open ? 'initial' : 'center',
-                                        px: 2.5,
-                                    }}
-                                >
-                                    <ListItemIcon
-                                        sx={{
-                                            minWidth: 0,
-                                            mr: open ? 3 : 'auto',
-                                            justifyContent: 'center',
-                                        }}
-                                    >
-                                        <Home />
-                                    </ListItemIcon>
-                                    <ListItemText primary={"Home"} sx={{ opacity: open ? 1 : 0 }} />
-                                </ListItemButton>
-                            </Link>
-                        </ListItem>
+                        <HomeListLink open={open} />
                     </List>
                     <Divider />
                     <List>
-                        <ListItem key='Creatures' disablePadding sx={{ display: 'block' }}>
-                            <Link to={'/rpg/creatures'}>
-                                <ListItemButton
-                                    sx={{
-                                        minHeight: 48,
-                                        justifyContent: open ? 'initial' : 'center',
-                                        px: 2.5,
-                                    }}
-                                >
-                                    <ListItemIcon
-                                        sx={{
-                                            minWidth: 0,
-                                            mr: open ? 3 : 'auto',
-                                            justifyContent: 'center',
-                                        }}
-                                    >
-                                        <Pets />
-                                    </ListItemIcon>
-                                    <ListItemText primary='Creatures' sx={{ opacity: open ? 1 : 0 }} />
-                                </ListItemButton>
-                            </Link>
-                        </ListItem>
+                        <LinkCreatures open={open} />
+                        <LinkArmoury open={open} />
+                        <LinkMagicItems open={open} />
+                        <LinkReligions open={open} />
+                        <LinkNations open={open} />
+                        <LinkCharacters open={open} />
+                    </List>
+                        <Divider />
+                    <List>
+                        <LinkMap open={open} />
                     </List>
                 </Drawer>
 
@@ -225,4 +199,4 @@ function Layout(props: LayoutProps) {
     );
 }
 
-export default Layout;
+export default RoleplayLayout;

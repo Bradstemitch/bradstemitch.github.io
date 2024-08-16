@@ -1,23 +1,25 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Routes, Route, Outlet, Link, HashRouter } from "react-router-dom";
-import RoleplayWebsite from './modules/roleplayWebsite/components/Structure/RoleplayRoutes';
+import { Routes, Route, Outlet, Link, HashRouter, BrowserRouter } from "react-router-dom";
+import RoleplayRoutes from './modules/roleplayWebsite/components/Structure/RoleplayRoutes';
 
 function App() {
   return (
     <HashRouter basename='/'>
+
+      {/* <BrowserRouter basename='/memoirs-of-grund-wiki'> */}
       <Routes>
-        <Route path={'/'} element={
+        <Route path={'/*'} element={
           <>
-            <Outlet />
+            <RoleplayRoutes />
+            {/* <Outlet /> */}
           </>
         }>
-          <Route path='rpg/*' element={
-            <RoleplayWebsite />
-          } />
+          {/* <Route path='rpg/*' element={
+          } /> */}
         </Route>
       </Routes>
+      {/* </BrowserRouter> */}
     </HashRouter>
   );
 }

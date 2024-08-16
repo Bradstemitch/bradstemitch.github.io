@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { Routes, Route } from "react-router-dom";
-import Layout from './RoleplayLayout';
-import CreaturePage from '../Creature/CreaturePage';
+import RoleplayLayout from './RoleplayLayout';
+import CreaturesRouting from '../Creature/CreaturesRouting';
 import MagicItem from '../MagicItems/MagicItem';
+import NationsRouting from '../Nations/NationsRouting';
+import CharacterPage from '../Characters/CharacterPage';
+import CharacterRouting from '../Characters/CharacterRouting';
+import MagicItemsRouting from '../MagicItems/MagicItemsRouting';
 
-function RoleplayWebsite() {
+function RoleplayRoutes() {
     const [roleplaySystem, setRoleplaySystem] = useState<string>('DnD5e')
 
     return (
         <Routes>
-            <Route path={'/'} element={
+            <Route path={'/*'} element={
                 <>
-                    <Layout setRoleplaySystem={setRoleplaySystem} />
-                    {roleplaySystem}
+                    <RoleplayLayout setRoleplaySystem={setRoleplaySystem} />
                 </>
             }>
                 <Route index element={
@@ -22,21 +25,28 @@ function RoleplayWebsite() {
                 } />
 
                 <Route path='creatures/*' element={
-                    <CreaturePage roleplaySystem={roleplaySystem} />
+                    <CreaturesRouting roleplaySystem={roleplaySystem} />
                 } />
 
-                <Route path='Magic' element={
-                    <MagicItem
-                        width={'30%'}
-                        height={'100%'}
-                        roleplaySystem={roleplaySystem}
-                    />
-                }>
-                </Route>
+                <Route path='armoury/*' element={
+                    <div></div>
+                }/>
+
+                <Route path='magicItems/*' element={
+                    <MagicItemsRouting roleplaySystem={roleplaySystem} />
+                }/>
+
+                <Route path='characters/*' element={
+                    <CharacterRouting />
+                }/>
+
+                <Route path='nations/*' element={
+                    <NationsRouting />
+                }/>
             </Route>
         </Routes>
     );
 }
 
-export default RoleplayWebsite;
+export default RoleplayRoutes;
 

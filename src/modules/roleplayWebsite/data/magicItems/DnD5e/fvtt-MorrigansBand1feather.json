@@ -1,0 +1,134 @@
+{
+  "name": "Morrigan’s Band (1 Feather)",
+  "type": "equipment",
+  "img": "systems/dnd5e/icons/svg/items/equipment.svg",
+  "system": {
+    "description": {
+      "value": "<p><span style=\"font-family:'Droid Sans',sans-serif\"><em><strong>   Fate Dice.</strong></em> The band stores a number of ‘fate dice’ equal to the number of feathers attached to it. Each fate dice is a number from 1 - 20 that can be used to change fate. When the band is found, the GM chooses the band’s current dice or determines it randomly.</span></p><p dir=\"ltr\" style=\"line-height:1.38;margin-top:5pt;margin-bottom:0pt\"><span style=\"font-family:'Droid Sans',sans-serif\"><em><strong>   Change Fate.</strong></em> You can replace any Attack roll, Saving Throw, or Ability Check made by you or a creature that you can see with one of your fate dice. You must choose to do so after the roll, but before the outcome is determined. You change the ‘fate dice’ you have stord to the dice roll it has just replaced. You may only use this feature once per long rest.</span></p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": "",
+      "name": "Unidentified Equipment"
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "activation": {
+      "type": "none",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "any",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "any"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "lr",
+      "recovery": "",
+      "prompt": false
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": "none",
+    "actionType": "util",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {
+    "exportSource": {
+      "world": "compendium-project-dandd",
+      "system": "dnd5e",
+      "coreVersion": "12.330",
+      "systemVersion": "3.3.1"
+    }
+  },
+  "_stats": {
+    "coreVersion": "12.330",
+    "systemId": "dnd5e",
+    "systemVersion": "3.3.1",
+    "createdTime": 1723763085175,
+    "modifiedTime": 1723763900690,
+    "lastModifiedBy": "Tu6NIikbqtsNemQh"
+  }
+}
