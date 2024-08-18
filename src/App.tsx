@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Routes, Route, Outlet, Link, HashRouter, BrowserRouter } from "react-router-dom";
-import RoleplayRoutes from './modules/roleplayWebsite/components/Structure/RoleplayRoutes';
+import RoleplayRoutes from './components/Structure/RoleplayRoutes';
 
 function App() {
   return (
