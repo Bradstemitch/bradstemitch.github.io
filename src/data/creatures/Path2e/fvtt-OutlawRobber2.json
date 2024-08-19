@@ -1,7 +1,7 @@
 {
   "prototypeToken": {
-    "displayName": 20,
-    "displayBars": 20,
+    "displayName": 0,
+    "displayBars": 0,
     "flags": {
       "pf2e": {
         "linkToActorSize": true,
@@ -10,12 +10,12 @@
     },
     "height": 1,
     "width": 1,
-    "name": "Ceithearn",
+    "name": "Robber",
     "actorLink": false,
     "appendNumber": false,
     "prependAdjective": false,
     "texture": {
-      "src": "modules/memoirs-of-grund/assets/tokens/HumanoidFomorianCeithearn.png",
+      "src": "modules/memoirs-of-grund/assets/tokens/HumanoidHumanMilitia.png",
       "scaleX": 2,
       "scaleY": 2,
       "offsetX": 0,
@@ -92,7 +92,7 @@
       }
     }
   },
-  "name": "Ceithearn",
+  "name": "Robber",
   "type": "npc",
   "effects": [],
   "system": {
@@ -205,7 +205,7 @@
       }
     }
   },
-  "img": "modules/memoirs-of-grund/assets/tokens/HumanoidFomorianCeithearn.png",
+  "img": "modules/memoirs-of-grund/assets/tokens/HumanoidHumanMilitia.png",
   "items": [
     {
       "img": "systems/pf2e/icons/actions/Reaction.webp",
@@ -1328,7 +1328,7 @@
       "_id": "fHEZwEOK0B9SbTIo"
     }
   ],
-  "folder": "e4vgHMYHXYS1DADG",
+  "folder": null,
   "flags": {
     "core": {},
     "exportSource": {
@@ -1342,8 +1342,8 @@
     "coreVersion": "12.330",
     "systemId": "pf2e",
     "systemVersion": "6.2.1",
-    "createdTime": 1723823574487,
-    "modifiedTime": 1723823574487,
+    "createdTime": 1723825992732,
+    "modifiedTime": 1723828653584,
     "lastModifiedBy": "zGBP0faGe9s57rxO"
   }
 }

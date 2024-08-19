@@ -16,8 +16,9 @@ function CharacterRouting(props: any) {
                 <Route index element={
                     <div>
                         <h2>Creatures</h2>
-                        {CharacterList.map(character => (
-                            // <li key={creature.fileName + '-creaturePage-li'}>
+                        {CharacterList.map(character => {
+                            return (
+                                // <li key={creature.fileName + '-creaturePage-li'}>
                                 <Link
                                     key={character.fileName + '-creaturePage-Link'}
                                     to={`/characters/${character.fileName}`}
@@ -26,24 +27,27 @@ function CharacterRouting(props: any) {
                                         {character.name.fore} {character.name.sur}
                                     </button>
                                 </Link>
-                            // </li>
-                        ))}
+                                // </li>
+                            )
+                        })}
                     </div>
                 } />
 
-                {CharacterList.map(creature => (
-                    <Route
-                        key={creature.fileName + '-creaturePage-Route'}
-                        path={creature.fileName}
-                        element={
-                            <CharacterPage
-                                key={creature.fileName + '-creaturePage-CreatureBox'}
-                                width={'100%'} height={'auto'}
-                                roleplaySystem={props.roleplaySystem}
-                                creature={creature}
-                            />}
-                    />
-                ))}
+                {CharacterList.map(creature => {
+                    return (
+                        <Route
+                            key={creature.fileName + '-creaturePage-Route'}
+                            path={creature.fileName}
+                            element={
+                                <CharacterPage
+                                    key={creature.fileName + '-creaturePage-CreatureBox'}
+                                    width={'100%'} height={'auto'}
+                                    roleplaySystem={props.roleplaySystem}
+                                    creature={creature}
+                                />}
+                        />
+                    )
+                })}
             </Route>
         </Routes>
     );

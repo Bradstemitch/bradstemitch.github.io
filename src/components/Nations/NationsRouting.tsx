@@ -16,24 +16,28 @@ function NationsRouting(props: any) {
                 <Route index element={
                     <div>
                         <h2>Nations</h2>
-                        {nationTypes.map(nationType => (
-                            <>
-                                <div>{nationType}</div>
-                                {NationList.filter(nation => nation.type === nationType).map(nation => (
-                                    // <li key={creature.fileName + '-creaturePage-li'}>
-                                    <Link
-                                        key={nation.fileName + '-creaturePage-Link'}
-                                        to={`/nations/${nation.fileName}`}
-                                    >
-                                        <button>
-                                            {nation.name}
-                                        </button>
-                                    </Link>
-                                    // </li>
-                                ))}
-                                <br />
-                            </>
-                        ))}
+                        {nationTypes.map(nationType => {
+                            return (
+                                <>
+                                    <div>{nationType}</div>
+                                    {NationList.filter(nation => nation.type === nationType).map(nation => {
+                                        return (
+                                            // <li key={creature.fileName + '-creaturePage-li'}>
+                                            <Link
+                                                key={nation.fileName + '-creaturePage-Link'}
+                                                to={`/nations/${nation.fileName}`}
+                                            >
+                                                <button>
+                                                    {nation.name}
+                                                </button>
+                                            </Link>
+                                            // </li>
+                                        )
+                                    })}
+                                    <br />
+                                </>
+                            )
+                        })}
                     </div>
                 } />
 
