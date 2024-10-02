@@ -1,7 +1,0 @@
-table {
-    border-collapse: collapse;
-  }
-  table td, table th {
-    border: 0px solid black;
-    min-width: 60px;
-  }

@@ -52,5 +52,23 @@ export const NationList = [
     'fileName': 'Messar',
     'type': 'Kingdom',
     'tags': ['Messar']
-  }
+  },
+  {
+    'name': 'Accerra',
+    'fileName': 'Accerra',
+    'type': 'City State',
+    'tags': ['Arcadia']
+  },
+  {
+    'name': 'Ceresse',
+    'fileName': 'Ceresse',
+    'type': 'City State',
+    'tags': ['Arcadia']
+  },
+  {
+    'name': 'Comino',
+    'fileName': 'Comino',
+    'type': 'City State',
+    'tags': ['Arcadia']
+  },
 ]

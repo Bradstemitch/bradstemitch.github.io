@@ -1,83 +1,123 @@
 export const Humanoids = [
     {
-        'name': 'Fyrd',
-        'fileName': 'SaxonFyrd',
-        'tags': ['Messar']
-    },
-    {
-        'name': 'Select-Fyrd',
-        'fileName': 'SaxonSelectFyrd',
-        'tags': ['Messar']
-    },
-    {
-        'name': 'Huscarl',
-        'fileName': 'SaxonHuscarl',
-        'tags': ['Messar']
-    },
-    {
-        'name': 'Thegn',
-        'fileName': 'SaxonThegn',
-        'tags': ['Messar']
-    },
-    {
         'name': 'Arbalest',
-        'fileName': 'FeudalArbalest',
+        'fileName': 'AllairanArbalest',
         'tags': ['Allaire']
     },
     {
         'name': 'Levy',
-        'fileName': 'NormanLevy',
+        'fileName': 'AllairanLevy',
         'tags': ['Allaire']
     },
     {
         'name': 'Pedite',
-        'fileName': 'NormanPedite',
+        'fileName': 'AllairanPedite',
         'tags': ['Allaire']
     },
     {
         'name': 'Milite',
-        'fileName': 'NormanMilite',
+        'fileName': 'AllairanMilite',
         'tags': ['Allaire']
     },
     {
         'name': 'Knight',
-        'fileName': 'NormanKnight',
+        'fileName': 'AllairanKnight',
         'tags': ['Allaire']
     },
     {
-        'name': 'Celtic Youth',
-        'fileName': 'CelticYouth',
+        'name': 'Ashigaru',
+        'fileName': 'AkitsudoAshigaru',
+        'tags': ['Akitsudo']
+    },
+    {
+        'name': 'Samurai (Sengoku)',
+        'fileName': 'AkitsudoSengokuSamurai',
+        'tags': ['Akitsudo']
+    },
+    {
+        'name': 'Black Company',
+        'fileName': 'BrytthBlackCompany',
+        'tags': ['Brytth']
+    },
+    {
+        'name': 'Limitanei',
+        'fileName': 'BrytthLimitanei',
+        'tags': ['Brytth', 'Carna']
+    },
+    {
+        'name': 'Comitatenses',
+        'fileName': 'BrytthComitatenses',
+        'tags': ['Brytth', 'Carna']
+    },
+    {
+        'name': 'Palatini',
+        'fileName': 'BrytthPalatini',
+        'tags': ['Brytth', 'Carna']
+    },
+    {
+        'name': 'Fomorian Youth',
+        'fileName': 'FomorianYouth',
         'tags': ['Fomorians']
     },
     {
         'name': 'Ceithearn',
-        'fileName': 'CelticCeithearn',
+        'fileName': 'FomorianCeithearn',
         'tags': ['Fomorians']
     },
     {
         'name': 'Gallóglaigh',
-        'fileName': 'CelticGallóglaigh',
+        'fileName': 'FomorianGallóglaigh',
         'tags': ['Fomorians']
     },
     {
-        'name': 'Hoplite',
-        'fileName': 'HellenicHoplite',
-        'tags': ['Mycenae']
-    },
-    {
-        'name': 'Armoured Hoplite',
-        'fileName': 'HellenicHopliteArmoured',
-        'tags': ['Mycenae']
+        'name': 'Chosen',
+        'fileName': 'FomorianChosen',
+        'tags': ['Fomorians']
     },
     {
         'name': 'Raider',
-        'fileName': 'NorseRaider',
+        'fileName': 'KrasenRaider',
         'tags': ['Krasaheim']
     },
     {
         'name': 'Huskarl',
-        'fileName': 'NorseHuskar;',
+        'fileName': 'KrasenHuskarl',
         'tags': ['Krasaheim']
+    },
+    {
+        'name': 'Berserker',
+        'fileName': 'KrasenBerserker',
+        'tags': ['Krasaheim']
+    },
+    {
+        'name': 'Fyrd',
+        'fileName': 'MessanFyrd',
+        'tags': ['Messar']
+    },
+    {
+        'name': 'Select-Fyrd',
+        'fileName': 'MessanSelectFyrd',
+        'tags': ['Messar']
+    },
+    {
+        'name': 'Huscarl',
+        'fileName': 'MessanHuscarl',
+        'tags': ['Messar']
+    },
+    {
+        'name': 'Thegn',
+        'fileName': 'MessanThegn',
+        'tags': ['Messar']
+    },
+    {
+        'name': 'Hoplite',
+        'fileName': 'MycenaeanHoplite',
+        'tags': ['Mycenae']
+    },
+    {
+        'name': 'Armoured Hoplite',
+        'fileName': 'MycenaeanHopliteArmoured',
+        'tags': ['Mycenae']
     },
     {
         'name': 'Assassin',
@@ -108,5 +148,10 @@ export const Humanoids = [
         'name': 'Robber',
         'fileName': 'OutlawRobber',
         'tags': ['Outlaw']
+    },
+    {
+        'name': 'Rifleman',
+        'fileName': 'VindictisRifleman',
+        'tags': ['Vindictis']
     }
 ]

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, Outlet, Route, Routes } from 'react-router-dom';
 import { NationList } from '../../data/NationList';
 
-const nationTypes = ['Empire', 'Kingdom', 'Tribal Rulers']
+const nationTypes = ['Empire', 'Kingdom', 'Tribal Rulers', 'City State']
 
 function NationsRouting(props: any) {
     return (

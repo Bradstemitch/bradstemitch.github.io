@@ -1,7 +1,17 @@
 export const Fey = [
     {
-        'name': 'Cu Shide',
-        'fileName': 'ScourgeSpiderSwarm',
-        'tags': ['Scourge']
+        'name': 'Black Shuck',
+        'fileName': 'FeyBlackShuck',
+        'tags': ['']
+    },
+    {
+        'name': 'Cú Sídhe',
+        'fileName': 'FeyCúSídhe',
+        'tags': ['']
+    },
+    {
+        'name': 'Dryad',
+        'fileName': 'FeyDryad',
+        'tags': ['']
     }
 ]

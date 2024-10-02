@@ -1,45 +1,25 @@
 import React from 'react';
-import DnD5eAttributeTable from './DnD5eAttributeTable';
-import DnD5eArmourList from './DnD5eArmourList';
-import DnD5eSkillList from './DnD5eSkillList';
-import DnD5eWeaponList from './DnD5eWeaponList';
-import DnD5eCreatureArmourClass from './DnD5eCreatureArmourClass';
+import Path2eAttackActions from './Path2eAttackActions';
 
 function CreatureStatBlockPath2e(props: any) {
     const creature = props.creature
     var first = true
 
-    const stats = {
-        str: creature.system.abilities.str.value,
-        strMod: Math.trunc((creature.system.abilities.str.value - 10) / 2),
-        dex: creature.system.abilities.dex.value,
-        dexMod: Math.trunc((creature.system.abilities.dex.value - 10) / 2),
-        con: creature.system.abilities.con.value,
-        conMod: Math.trunc((creature.system.abilities.con.value - 10) / 2),
-        int: creature.system.abilities.int.value,
-        intMod: Math.trunc((creature.system.abilities.int.value - 10) / 2),
-        wis: creature.system.abilities.wis.value,
-        wisMod: Math.trunc((creature.system.abilities.wis.value - 10) / 2),
-        cha: creature.system.abilities.cha.value,
-        chaMod: Math.trunc((creature.system.abilities.cha.value - 10) / 2)
-    }
-
-    const profBonus = creature.system.details.cr < 5 ? 2
-        : creature.system.details.cr < 9 ? 3
-            : creature.system.details.cr < 13 ? 4
-                : creature.system.details.cr < 17 ? 5
-                    : creature.system.details.cr < 21 ? 6
-                        : creature.system.details.cr < 25 ? 7
-                            : creature.system.details.cr < 29 ? 8
-                                : 9
     function capitalise(s: string) {
         return s[0].toUpperCase() + s.slice(1);
     }
 
     function cleanFoundryVariables(s: string) {
-        s = s.replace('@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}', 'Demoralize')
-        s = s.replace('@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}', 'Frightened')
-        s = s.replace('@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}', 'Off-Guard')
+        s = s.replaceAll('@UUID[Compendium.pf2e.actionspf2e.Item.2u915NdUyQan6uKF]{Demoralize}', 'Demoralize')
+        s = s.replaceAll('@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened}', 'Frightened')
+        s = s.replaceAll('@UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}', 'Off-Guard')
+        s = s.replaceAll('@UUID[Compendium.pf2e.bestiary-effects.Item.T9wQ1LvsvPWTefQR]{Effect: Under Command}', '')
+        s = s.replaceAll('@UUID[Compendium.pf2e.bestiary-effects.Item.OxOMYmlPtjsEkRtY]{Effect: Aura of Command}', '')
+        s = s.replaceAll('@UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}', 'Aura')
+        s = s.replaceAll('@Template[type:emanation|distance:30]{30 feet}', '30ft.')
+        s = s.replaceAll('<p>', '')
+        s = s.replaceAll('</p>', '')
+        s = s.replaceAll('<hr />', ':')
         return s;
     }
 
@@ -55,14 +35,24 @@ function CreatureStatBlockPath2e(props: any) {
             </div>
 
             <div>
-                <div style={{ "color": "white", "padding": "2px 0px 2px 0px", "margin": "4px 0px 4px 0px" }}>
-                    <strong style={{ "background": "blue", "padding": "2px 10px 2px 10px", "marginRight": "4px" }}>
+                <div style={{ "background": "beige", "color": "white", "padding": "6px 2px 6px 6px", "margin": "2px 0px 0px 0px", "display": "inline-block" }}>
+
+                    {creature.system.traits.rarity === 'uncommon' &&
+                        <strong style={{ "background": "darkOrange", "padding": "2px 10px 2px 10px", "marginRight": "4px" }}>
+                            Uncommon
+                        </strong>
+                    }
+                    {/* <strong style={{ "background": "blue", "padding": "2px 10px 2px 10px", "marginRight": "4px" }}>
                         {creature.system.traits.value.includes('lawful') && `LN`}
                         {creature.system.traits.value.includes('evil') && `NE`}
-                    </strong>
+                    </strong> */}
 
                     <strong style={{ "background": "green", "padding": "2px 10px 2px 10px", "marginRight": "4px" }}>
+                        {creature.system.traits.size.value === 'huge' && `Huge`}
+                        {creature.system.traits.size.value === 'lg' && `Large`}
                         {creature.system.traits.size.value === 'med' && `Medium`}
+
+
                     </strong>
 
                     {creature.system.traits.value.filter((trait: string) =>
@@ -85,7 +75,6 @@ function CreatureStatBlockPath2e(props: any) {
                     <strong>Languages </strong>
                     {Object.values(creature.system.details.languages).filter((language: any) => language.length !== 0).map((language: any) => {
                         const firstEntry = first
-                        console.log(language)
                         first = false
                         return (
                             <span style={{ "textTransform": "capitalize" }}>
@@ -151,6 +140,7 @@ function CreatureStatBlockPath2e(props: any) {
                             </>
                         )
                     })}
+                    {first = true}
                 </div>
             </div>
 
@@ -170,6 +160,40 @@ function CreatureStatBlockPath2e(props: any) {
                 <div>
                     <strong>HP </strong>
                     {creature.system.attributes.hp.value}
+
+                    {creature.system.attributes.resistances && creature.system.attributes.resistances.length > 0 &&
+                        <>
+                            <strong> Resistances </strong>
+                            {creature.system.attributes.resistances.map((resistance: any) => {
+                                const firstEntry = first
+                                first = false
+                                return (
+                                    <span style={{ "textTransform": "capitalize" }}>
+                                        {firstEntry ? `${resistance.type} ${resistance.value}` : `, ${resistance.type} ${resistance.value}`}
+                                    </span>
+                                )
+                            })}
+                            ;
+                            {first = true}
+                        </>
+                    }
+
+                    {creature.system.attributes.immunities && creature.system.attributes.immunities.length > 0 &&
+                        <>
+                            <strong> Immunities </strong>
+                            {creature.system.attributes.immunities.map((immunity: any) => {
+                                const firstEntry = first
+                                first = false
+                                return (
+                                    <span style={{ "textTransform": "capitalize" }}>
+                                        {firstEntry ? `${immunity.type}` : `, ${immunity.type}`}
+                                    </span>
+                                )
+                            })}
+                            ;
+                            {first = true}
+                        </>
+                    }
                 </div>
 
                 {creature.items.filter((item: any) => item.system.category === 'defensive' && item.system.actionType.value === 'passive').map((item: any) => {
@@ -178,7 +202,7 @@ function CreatureStatBlockPath2e(props: any) {
                             <strong>
                                 {`${item.name} `}
                             </strong>
-                            {cleanFoundryVariables(item.system.description.value.slice(3, item.system.description.value.length - 4))}
+                            {cleanFoundryVariables(item.system.description.value)}
                         </div>
                     )
                 })}
@@ -190,7 +214,12 @@ function CreatureStatBlockPath2e(props: any) {
                     {creature.system.attributes.speed.value}ft.
                 </div>
                 <div>
-                    Melee
+
+                    {creature.items.filter((item: any) => item.type === 'melee').map((item: any) => {
+                        return (
+                            <Path2eAttackActions item={item} />
+                        )
+                    })}
                 </div>
                 {creature.items.filter((item: any) => item.system.category === 'offensive' && item.system.actionType.value === 'passive').map((item: any) => {
                     return (
@@ -198,7 +227,7 @@ function CreatureStatBlockPath2e(props: any) {
                             <strong>
                                 {`${item.name} `}
                             </strong>
-                            {cleanFoundryVariables(item.system.description.value.slice(3, item.system.description.value.length - 4))}
+                            {cleanFoundryVariables(item.system.description.value)}
                         </div>
                     )
                 })}

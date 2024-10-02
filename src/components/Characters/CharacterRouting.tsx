@@ -15,7 +15,7 @@ function CharacterRouting(props: any) {
 
                 <Route index element={
                     <div>
-                        <h2>Creatures</h2>
+                        <h2>Characters</h2>
                         {CharacterList.map(character => {
                             return (
                                 // <li key={creature.fileName + '-creaturePage-li'}>

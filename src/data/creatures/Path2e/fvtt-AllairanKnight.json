@@ -10,14 +10,14 @@
     },
     "height": 1,
     "width": 1,
-    "name": "Chosen",
+    "name": "Knight",
     "actorLink": false,
     "appendNumber": false,
     "prependAdjective": false,
     "texture": {
-      "src": "modules/memoirs-of-grund/assets/tokens/HumanoidFomorianChosen.png",
-      "scaleX": 3,
-      "scaleY": 3,
+      "src": "modules/memoirs-of-grund/assets/tokens/HumanoidAllairanKnight.png",
+      "scaleX": 2,
+      "scaleY": 2,
       "offsetX": 0,
       "offsetY": 0,
       "rotation": 0,
@@ -92,15 +92,15 @@
       }
     }
   },
-  "name": "Chosen",
+  "name": "Knight",
   "type": "npc",
   "effects": [],
   "system": {
     "attributes": {
       "hp": {
-        "value": 135,
+        "value": 95,
         "temp": 0,
-        "max": 135,
+        "max": 95,
         "details": ""
       },
       "speed": {
@@ -109,8 +109,8 @@
         "details": ""
       },
       "ac": {
-        "value": 30,
-        "details": "(32 with shield raised)"
+        "value": 24,
+        "details": "(26 with shield raised)"
       },
       "allSaves": {
         "value": ""
@@ -124,8 +124,7 @@
           ],
           "doubleVs": []
         }
-      ],
-      "adjustment": null
+      ]
     },
     "initiative": {
       "statistic": "perception"
@@ -133,10 +132,10 @@
     "details": {
       "languages": {
         "value": [],
-        "details": ""
+        "details": "allairan"
       },
       "level": {
-        "value": 8
+        "value": 6
       },
       "blurb": "",
       "publicNotes": "",
@@ -160,41 +159,41 @@
     },
     "abilities": {
       "str": {
-        "mod": 0
+        "mod": 5
       },
       "dex": {
-        "mod": 0
+        "mod": 2
       },
       "con": {
-        "mod": 0
+        "mod": 2
       },
       "int": {
         "mod": 0
       },
       "wis": {
-        "mod": 0
+        "mod": 4
       },
       "cha": {
-        "mod": 0
+        "mod": 4
       }
     },
     "perception": {
       "details": "",
-      "mod": 13,
+      "mod": 14,
       "senses": [],
       "vision": true
     },
     "saves": {
       "fortitude": {
-        "value": 19,
+        "value": 14,
         "saveDetail": ""
       },
       "reflex": {
-        "value": 16,
+        "value": 11,
         "saveDetail": ""
       },
       "will": {
-        "value": 16,
+        "value": 17,
         "saveDetail": ""
       }
     },
@@ -221,7 +220,7 @@
       }
     }
   },
-  "img": "modules/memoirs-of-grund/assets/tokens/HumanoidFomorianChosen.png",
+  "img": "modules/memoirs-of-grund/assets/tokens/HumanoidAllairanKnight.png",
   "items": [
     {
       "img": "systems/pf2e/icons/equipment/armor/halfplate.webp",
@@ -592,6 +591,78 @@
       "_id": "HeuPSFbUF0hKOcWN"
     },
     {
+      "name": "Greatpick",
+      "type": "melee",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "fatal-d12"
+          ],
+          "otherTags": []
+        },
+        "damageRolls": {
+          "OIKHFvVBrQNqX2VT": {
+            "damage": "1d10+11",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 17
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.2"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "HeuPSFbUF0hKOcWN"
+        },
+        "core": {
+          "sourceId": "Actor.VCeFuTbc5PcfJRju.Item.elWpey2dLB6NC0Wd"
+        }
+      },
+      "_id": "elWpey2dLB6NC0Wd",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 62500,
+      "ownership": {
+        "default": 0,
+        "zGBP0faGe9s57rxO": 3
+      },
+      "_stats": {
+        "compendiumSource": "Actor.VCeFuTbc5PcfJRju.Item.elWpey2dLB6NC0Wd",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
       "img": "systems/pf2e/icons/actions/Reaction.webp",
       "name": "Attack of Opportunity",
       "system": {
@@ -735,6 +806,194 @@
       "_id": "O20h32AWTb6vCu5v"
     },
     {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Aura of Command",
+      "sort": 1000000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>@Template[type:emanation|distance:30]{30 feet} @UUID[Compendium.pf2e.bestiary-ability-glossary-srd.Item.v61oEQaDdcRpaZ9X]{Aura}</p>\n<hr />\n<p>The knight bolsters lower-level guards under their command, granting them a +1 status bonus to their attack rolls and a +2 status bonus to their Will saves.</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.T9wQ1LvsvPWTefQR]{Effect: Under Command}</p>\n<p>@UUID[Compendium.pf2e.bestiary-effects.Item.OxOMYmlPtjsEkRtY]{Effect: Aura of Command}</p>"
+        },
+        "rules": [
+          {
+            "effects": [
+              {
+                "affects": "allies",
+                "events": [
+                  "enter"
+                ],
+                "includesSelf": false,
+                "predicate": [
+                  "target:effect:under-command",
+                  {
+                    "lt": [
+                      "target:level",
+                      "self:level"
+                    ]
+                  }
+                ],
+                "uuid": "Compendium.pf2e.bestiary-effects.Item.OxOMYmlPtjsEkRtY"
+              }
+            ],
+            "key": "Aura",
+            "radius": 30,
+            "slug": "aura-of-command",
+            "traits": [
+              "emotion",
+              "mental"
+            ]
+          }
+        ],
+        "slug": "",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.844,
+            "foundry": "12.331",
+            "system": "6.2.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [
+            "aura",
+            "emotion",
+            "mental"
+          ],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": ""
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        },
+        "weapon": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0,
+        "zGBP0faGe9s57rxO": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Scene.sy3Nu4lf7xuWEpTS.Token.YOAPWEc1BPwVX8z7.Actor.DsnKy240htL3qpSc.Item.T7oZcH7OKDm1O4cw"
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Scene.sy3Nu4lf7xuWEpTS.Token.YOAPWEc1BPwVX8z7.Actor.DsnKy240htL3qpSc.Item.T7oZcH7OKDm1O4cw",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_id": "PdoEHyIbyXGf4ycR"
+    },
+    {
+      "img": "systems/pf2e/icons/actions/Passive.webp",
+      "name": "Bravery",
+      "sort": 1100000,
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p>When the knight rolls a success on a Will save against a fear effect, they get a critical success instead. In addition, any time they gain the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition, reduce its value by 1.</p>"
+        },
+        "rules": [
+          {
+            "adjustment": {
+              "success": "one-degree-better"
+            },
+            "key": "AdjustDegreeOfSuccess",
+            "predicate": [
+              "fear"
+            ],
+            "selector": "will",
+            "type": "save"
+          }
+        ],
+        "slug": "",
+        "_migration": {
+          "version": 0.932,
+          "lastMigration": null,
+          "previous": {
+            "schema": 0.844,
+            "foundry": "12.331",
+            "system": "6.2.2"
+          }
+        },
+        "traits": {
+          "otherTags": [],
+          "value": [],
+          "rarity": "common"
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "actionType": {
+          "value": "passive"
+        },
+        "category": "defensive",
+        "actions": {
+          "value": ""
+        },
+        "deathNote": false,
+        "requirements": {
+          "value": ""
+        },
+        "trigger": {
+          "value": ""
+        }
+      },
+      "type": "action",
+      "effects": [],
+      "folder": null,
+      "ownership": {
+        "default": 0,
+        "zGBP0faGe9s57rxO": 3
+      },
+      "flags": {
+        "core": {
+          "sourceId": "Scene.sy3Nu4lf7xuWEpTS.Token.YOAPWEc1BPwVX8z7.Actor.DsnKy240htL3qpSc.Item.HXCEPfKkb2TP6NVy"
+        }
+      },
+      "_stats": {
+        "compendiumSource": "Scene.sy3Nu4lf7xuWEpTS.Token.YOAPWEc1BPwVX8z7.Actor.DsnKy240htL3qpSc.Item.HXCEPfKkb2TP6NVy",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_id": "WwDKoTyidNnV3E5K"
+    },
+    {
       "_id": "XQGON2wwBb3p3cwX",
       "flags": {
         "core": {
@@ -866,6 +1125,79 @@
       },
       "_stats": {
         "compendiumSource": "Compendium.pf2e.equipment-srd.Item.LJdbVTOZog39EEbi",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Longsword",
+      "type": "melee",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "magical",
+            "versatile-p"
+          ],
+          "otherTags": []
+        },
+        "damageRolls": {
+          "EuPgdyLiHBy4qfoo": {
+            "damage": "1d8+11",
+            "damageType": "slashing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 17
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.2"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "XQGON2wwBb3p3cwX"
+        },
+        "core": {
+          "sourceId": "Actor.VCeFuTbc5PcfJRju.Item.M2grEfStLLrkEe2v"
+        }
+      },
+      "_id": "M2grEfStLLrkEe2v",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0,
+        "zGBP0faGe9s57rxO": 3
+      },
+      "_stats": {
+        "compendiumSource": "Actor.VCeFuTbc5PcfJRju.Item.M2grEfStLLrkEe2v",
         "duplicateSource": null,
         "coreVersion": "12.331",
         "systemId": "pf2e",
@@ -1020,15 +1352,163 @@
       "_id": "N4edRBjdblDSqwiv"
     },
     {
-      "img": "systems/pf2e/icons/conditions/quickened.webp",
-      "name": "Quickened",
+      "name": "Dagger",
+      "type": "melee",
       "system": {
         "description": {
           "gm": "",
-          "value": "<p>You gain 1 additional action at the start of your turn each round. Many effects that make you quickened specify the types of actions you can use with this additional action. If you become quickened from multiple sources, you can use the extra action you've been granted for any single action allowed by any of the effects that made you quickened. Because quickened has its effect at the start of your turn, you don't immediately gain actions if you become quickened during your turn.</p>"
+          "value": ""
         },
         "rules": [],
-        "slug": "quickened",
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "finesse",
+            "versatile-s"
+          ],
+          "otherTags": []
+        },
+        "damageRolls": {
+          "bSuuxajUxkxgxEh7": {
+            "damage": "1d4+11",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 17
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.2"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "N4edRBjdblDSqwiv"
+        },
+        "core": {
+          "sourceId": "Actor.VCeFuTbc5PcfJRju.Item.jTW8I5akb5foOurV"
+        }
+      },
+      "_id": "jTW8I5akb5foOurV",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 50000,
+      "ownership": {
+        "default": 0,
+        "zGBP0faGe9s57rxO": 3
+      },
+      "_stats": {
+        "compendiumSource": "Actor.VCeFuTbc5PcfJRju.Item.jTW8I5akb5foOurV",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "name": "Dagger",
+      "type": "melee",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "traits": {
+          "value": [
+            "agile",
+            "thrown-10",
+            "versatile-s"
+          ],
+          "otherTags": []
+        },
+        "damageRolls": {
+          "f7TACppgctKTMvIC": {
+            "damage": "1d4+11",
+            "damageType": "piercing",
+            "category": null
+          }
+        },
+        "bonus": {
+          "value": 17
+        },
+        "attackEffects": {
+          "value": []
+        },
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        },
+        "_migration": {
+          "version": 0.932,
+          "previous": {
+            "schema": null,
+            "foundry": "12.331",
+            "system": "6.2.2"
+          }
+        }
+      },
+      "flags": {
+        "pf2e": {
+          "linkedWeapon": "N4edRBjdblDSqwiv"
+        },
+        "core": {
+          "sourceId": "Actor.VCeFuTbc5PcfJRju.Item.Ku1tAfVcMzOUBext"
+        }
+      },
+      "_id": "Ku1tAfVcMzOUBext",
+      "img": "systems/pf2e/icons/default-icons/melee.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 75000,
+      "ownership": {
+        "default": 0,
+        "zGBP0faGe9s57rxO": 3
+      },
+      "_stats": {
+        "compendiumSource": "Actor.VCeFuTbc5PcfJRju.Item.Ku1tAfVcMzOUBext",
+        "duplicateSource": null,
+        "coreVersion": "12.331",
+        "systemId": "pf2e",
+        "systemVersion": "6.2.2",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      }
+    },
+    {
+      "img": "systems/pf2e/icons/actions/OneAction.webp",
+      "name": "Raise a Shield",
+      "system": {
+        "description": {
+          "gm": "",
+          "value": "<p><strong>Requirements</strong> You are wielding a shield</p>\n<hr />\n<p>You position your shield to protect yourself. When you have Raised a Shield, you gain its listed circumstance bonus to AC. Your shield remains raised until the start of your next turn.</p>\n<p>@UUID[Compendium.pf2e.equipment-effects.Item.2YgXoHvJfrDHucMr]{Effect: Raise a Shield}</p>"
+        },
+        "rules": [],
+        "slug": "raise-a-shield",
         "_migration": {
           "version": 0.932,
           "lastMigration": null,
@@ -1040,7 +1520,10 @@
         },
         "traits": {
           "otherTags": [],
-          "value": []
+          "value": [
+            "general"
+          ],
+          "rarity": "common"
         },
         "publication": {
           "title": "Pathfinder Core Rulebook",
@@ -1048,28 +1531,28 @@
           "license": "OGL",
           "remaster": false
         },
-        "group": null,
-        "duration": {
-          "value": 0,
-          "unit": "unlimited",
-          "expiry": null
+        "actionType": {
+          "value": "action"
         },
-        "value": {
-          "isValued": false,
-          "value": null
+        "category": "defensive",
+        "actions": {
+          "value": 1
         },
-        "references": {
-          "children": [],
-          "overrides": [],
-          "overriddenBy": [],
-          "immunityFrom": []
+        "deathNote": false,
+        "requirements": {
+          "value": ""
         },
-        "overrides": []
+        "trigger": {
+          "value": ""
+        },
+        "weapon": {
+          "value": ""
+        }
       },
-      "type": "condition",
+      "type": "action",
       "flags": {
         "core": {
-          "sourceId": "Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl"
+          "sourceId": "Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm"
         }
       },
       "effects": [],
@@ -1077,10 +1560,11 @@
       "sort": 0,
       "ownership": {
         "default": 0,
+        "pplkKAcnhxXf00LL": 3,
         "zGBP0faGe9s57rxO": 3
       },
       "_stats": {
-        "compendiumSource": "Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl",
+        "compendiumSource": "Compendium.pf2e.actionspf2e.Item.xjGwis0uaC2305pm",
         "duplicateSource": null,
         "coreVersion": "12.331",
         "systemId": "pf2e",
@@ -1089,10 +1573,10 @@
         "modifiedTime": null,
         "lastModifiedBy": null
       },
-      "_id": "ISFz5s8QN2gOboZG"
+      "_id": "Eyv5Km1279lHynji"
     }
   ],
-  "folder": "9CtC0rEjIlLi4fov",
+  "folder": "TAaMD5pr9E1OEKp7",
   "flags": {
     "core": {},
     "exportSource": {
@@ -1106,8 +1590,8 @@
     "coreVersion": "12.331",
     "systemId": "pf2e",
     "systemVersion": "6.2.2",
-    "createdTime": 1724090045123,
-    "modifiedTime": 1724090045123,
+    "createdTime": 1724090156858,
+    "modifiedTime": 1724090156858,
     "lastModifiedBy": "zGBP0faGe9s57rxO"
   }
 }
